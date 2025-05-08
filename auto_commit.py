@@ -25,7 +25,8 @@ try:
     subprocess.call(["git", "commit", "-m", commit_message])
     
     # Push the changes to GitHub
-    subprocess.call(["git", "push", "origin", "main"])
+    # subprocess.call(["git", "push", "origin", "main"])
+    subprocess.call(["git", "push", "origin", "master"])
     print("Successfully committed and pushed to GitHub!")
     
 except subprocess.CalledProcessError as e:
